@@ -1,0 +1,8 @@
+{
+    "uuid": "keypad-mouse-controller@gabriel125",
+    "name": "Keypad Mouse Controller",
+    "description": "Click here to toggle the mouse pointer control using the keypad.",
+    "icon": "input-mouse",
+    "max-instances": "1"
+}
+
