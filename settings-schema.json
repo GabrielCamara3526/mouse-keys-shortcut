@@ -1,10 +1,12 @@
 {
-    "width": {
-        "type" : "scale",
-        "default" : 10,
-        "min" : 2,
-        "max" : 400,
-        "step" : 1,
-        "description" : "Amount of space in pixels"
-    }
+  "section1": {
+    "type": "section",
+    "description": "Shortcuts"
+  },
+  "keyOpen": {
+    "type": "keybinding",
+    "description": "Toggle keypad control",
+    "default": "<Super><Shift>a",
+    "tooltip": "Shortcut to enable/disable keypad control"
+  }
 }
