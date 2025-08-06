@@ -5,8 +5,8 @@
   },
   "keyOpen": {
     "type": "keybinding",
-    "description": "Toggle keypad control",
+    "description": "Mouse Keys keyboard shortcut",
     "default": "<Super><Shift>a",
-    "tooltip": "Shortcut to enable/disable keypad control"
+    "tooltip": "Shortcut to enable/disable mouse keys setting"
   }
 }
