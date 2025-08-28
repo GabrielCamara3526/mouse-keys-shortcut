@@ -28,7 +28,6 @@ class MyApplet extends Applet.IconApplet {
       this.on_keybinding_changed.bind(this),
       null
     );
-
     this.settings.bindProperty(
       Settings.BindingDirection.BIDIRECTIONAL,
       "initial-delay",
@@ -109,9 +108,7 @@ class MyApplet extends Applet.IconApplet {
   }
 
   on_hotkey_triggered() {
-    if (this.settings.getValue("enableShortcut")) {
       this.on_applet_clicked();
-    }
   }
 
   on_applet_clicked() {
@@ -119,11 +116,15 @@ class MyApplet extends Applet.IconApplet {
     let mouseKeysEnable = settings.get_boolean('mousekeys-enable');
     if (!mouseKeysEnable) {
       settings.set_boolean('mousekeys-enable', true)
-      Main.notify("Mouse Keys: ON", "Control the pointer using the keypad");
+      if(this.settings.getValue("enableNotification")){
+        Main.notify("Mouse Keys: ON", "Control the pointer using the keypad");
+      }
     } 
     else {
       settings.set_boolean('mousekeys-enable', false)
-      Main.notify("Mouse Keys: OFF", "Control the pointer using the keypad")
+      if(this.settings.getValue("enableNotification")){
+        Main.notify("Mouse Keys: OFF", "Control the pointer using the keypad")
+      }
     }
       this.updateIcon()
     }
