@@ -1,23 +1,22 @@
 {
   "section1": {
     "type": "section",
-    "description": "Shortcuts"
+    "description": "Notification options"
   },
-  "enableShortcut": {
+  "enableNotification": {
     "type": "switch",
-    "default": false,
-    "description": "Use custom shortcut"
-  },
-  "keyOpen": {
-    "type": "keybinding",
-    "description": "Mouse Keys accessibility shortcut",
-    "default": "<Super><Shift>a",
-    "tooltip": "Shortcut to enable/disable mouse keys setting",
-    "dependency": "enableShortcut"
+    "default": true,
+    "description": "Display status notification"
   },
   "section2": {
     "type": "section",
     "description": "Mouse Keys"
+  },
+  "keyOpen": {
+    "type": "keybinding",
+    "description": "Accessibility shortcuts",
+    "default": "<Super><Shift>a",
+    "tooltip": "Shortcut to enable/disable mouse keys setting"
   },
   "initial-delay" : {
     "type": "spinbutton",
